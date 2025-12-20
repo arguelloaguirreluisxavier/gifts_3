@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viva el Bolón!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ec.css">
+</head>
+<body>
+
+    <audio id="bg-music" loop src="juyayay.mp3"></audio>
+    <video id="bg-video" loop muted playsinline crossorigin="anonymous" style="display:none" src="https://github.com/arguelloaguirreluisxavier/gift8/blame/d2f837cf90566d93209eeb415953dc7705d5b499/ec1.mp4"></video>
+
+    <div id="overlay">
+        <div class="glass-card">
+            <h2>🇪🇨 ECUADOR 🇪🇨</h2>
+            <p class="subtitle">Espero te guste</p>
+            
+            <button id="start-btn" onclick="startExperience()" disabled>
+                <span id="btn-loader" class="loader"></span>
+                <span id="btn-text">CARGANDO...</span>
+            </button>
+            
+            <div id="status-text">Iniciando motores...</div>
+        </div>
+    </div>
+
+    <div id="party-ui"><h1 class="juyayay">¡ZAPATEA, VALESKITA jaja!</h1></div>
+    
+    <div id="dialogue-box">
+        <span class="name-tag">Sr. Bolón dice:</span>
+        <span id="type-text"></span>
+    </div>
+
+    <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+
+<script src="ec.js"></script>
+</body>
+</html>
